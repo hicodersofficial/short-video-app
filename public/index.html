@@ -36,10 +36,49 @@
       rel="stylesheet"
     />
     <title>Shorts App</title>
+    <style>
+      .loading-logo {
+        opacity: 1;
+        animation: blink 1s linear infinite;
+      }
+      @keyframes blink {
+        0% {
+          opacity: 0.2;
+        }
+        25% {
+          opacity: 0.5;
+        }
+        50% {
+          opacity: 1;
+        }
+        75% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 0.2;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        "
+      >
+        <img
+          class="loading-logo"
+          src="/logo192.png"
+          alt="logo"
+          style="width: 200px"
+        />
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
